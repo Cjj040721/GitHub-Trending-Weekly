@@ -1,0 +1,37 @@
+name: Update weekly trending
+
+on:
+  schedule:
+    # 每周一 09:05 北京时间(= UTC 周一 01:05,GitHub Actions 用 UTC)
+    - cron: '5 1 * * 1'
+  workflow_dispatch: # 允许在 Actions 页面手动点按钮触发
+
+permissions:
+  contents: write # 允许工作流 commit 榜单到仓库
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Fetch trending and regenerate README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_trending.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md archives/
+          if git diff --cached --quiet; then
+            echo "榜单无变化,跳过提交"
+          else
+            git commit -m "docs: 更新本周榜单 ($(date +%Y-%m-%d))"
+            git push
+          fi
