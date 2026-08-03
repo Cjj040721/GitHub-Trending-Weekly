@@ -1,25 +1,26 @@
 # GitHub 每周热门榜
 
 > 每周自动更新:本周新建仓库中 star 数最高的 10 个项目。
-> 上次更新:2026-07-29 10:03 (北京时间)(由 GitHub Actions 自动生成)
+> 上次更新:2026-08-03 12:38 (北京时间)(由 GitHub Actions 自动生成)
 
-## 🔥 本周榜单(2026-W31)
+## 🔥 本周榜单(2026-W32)
 
 | 排名 | 项目 | 简介 | 语言 | ⭐ Star |
 | --- | --- | --- | --- | --- |
-| 1 | [MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3) | Open Frontier Intelligence | - | 3464 |
-| 2 | [vercel-labs/scriptc](https://github.com/vercel-labs/scriptc) | TypeScript-to-Native Compiler | TypeScript | 2133 |
-| 3 | [slvDev/esp32-ai](https://github.com/slvDev/esp32-ai) | 暂无简介 | Python | 2068 |
-| 4 | [mshumer/Claude-of-Duty](https://github.com/mshumer/Claude-of-Duty) | A Call of Duty-quality FPS in Three.js, built from a single prompt. | JavaScript | 1764 |
-| 5 | [kvcache-ai/AgentENV](https://github.com/kvcache-ai/AgentENV) | AgentENV (AENV) is a distributed platform for running agent environments at scale. | Rust | 1445 |
-| 6 | [makecindy/cindy](https://github.com/makecindy/cindy) | Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。 | TypeScript | 1007 |
-| 7 | [mikiarlo3/ai-copywriter](https://github.com/mikiarlo3/ai-copywriter) | An AI copywriter that uses real copywriting skills + real marketing knowledge with human tone. | Python | 991 |
-| 8 | [VictorTaelin/OptMem](https://github.com/VictorTaelin/OptMem) | Permanent memory for AI agents. A 426-token prompt, a script, plug and play. | Python | 806 |
-| 9 | [MoonshotAI/MoonEP](https://github.com/MoonshotAI/MoonEP) | MoonEP: A Perfectly Balanced Expert Parallelism Library via Dynamic Redundant Experts | Python | 795 |
-| 10 | [fuadmefleh/Shared-Claude-Chats](https://github.com/fuadmefleh/Shared-Claude-Chats) | An archive of public Claude and Grok conversations, exported from their share links as plain markdown, plus the two scripts that produce it. | Python | 679 |
+| 1 | [MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3) | Open Frontier Intelligence | - | 7921 |
+| 2 | [yc-software/qm](https://github.com/yc-software/qm) | Multiplayer agent harness for work | TypeScript | 7620 |
+| 3 | [bashalarmistalt/decimen-optical-transfer](https://github.com/bashalarmistalt/decimen-optical-transfer) | 暂无简介 | TypeScript | 3778 |
+| 4 | [trycompai/crm](https://github.com/trycompai/crm) | An open-source, agentic-first CRM. | TypeScript | 1931 |
+| 5 | [QwenAudio/qwen-audio-agent](https://github.com/QwenAudio/qwen-audio-agent) | A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents | JavaScript | 1753 |
+| 6 | [xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer](https://github.com/xdash/FDE-the-Guidance-Book-of-Forward-Deployed-Engineer) | FDE（前沿部署工程师）从零入门指南（基于范冰《增长黑客》原书框架） | - | 1682 |
+| 7 | [WilonityDev/WilonityLoader](https://github.com/WilonityDev/WilonityLoader) | Wilonity Loader – cheat lib w/ spoofer, driver bypass, undetected injector for 20+ games (RUST, CS2, Valorant, Tarkov, Warzone, PUBG, R6S, ArcRiders, Apex, Roblox, Meccha Chameleon). Kernel spoof, HWID cleaner, AC bypass (EAC/BE/VG). ESP, aimbot, WH, wallhack, triggerbot, radar, no recoil, silent aim, chams, skin changer, unlock all, no spread. | - | 1216 |
+| 8 | [sqliteai/waste](https://github.com/sqliteai/waste) | Run the full 2.78-trillion-parameter Kimi K3 model beyond available RAM by streaming activated weights directly from NVMe. A dependency-free, embeddable C inference engine. | C | 1171 |
+| 9 | [microsoft/skill-recorder](https://github.com/microsoft/skill-recorder) | Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio. | TypeScript | 920 |
+| 10 | [xikhar/persona](https://github.com/xikhar/persona) | Bringing real-time voice to life. | JavaScript | 796 |
 
 ## 📚 历史榜单
 
+- [2026-W32](archives/2026-W32.md)
 - [2026-W31](archives/2026-W31.md)
 
 ## 它是怎么工作的
