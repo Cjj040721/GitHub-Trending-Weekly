@@ -73,20 +73,42 @@ def render_readme(table: str, archive_files: list[str]) -> str:
     history = "\n".join(
         f"- [{w}](archives/{w}.md)" for w in sorted(archive_files, reverse=True)
     ) or "- 暂无"
-    return f"""# GitHub 每周热门榜
+    return f"""<div align="center">
 
-> 每周自动更新:本周新建仓库中 star 数最高的 {TOP_N} 个项目。
-> 上次更新:{now}(由 GitHub Actions 自动生成)
+# GitHub Trending Weekly
 
-## 🔥 本周榜单({week_id()})
+**Fresh repositories. Ranked by stars. Archived every week.**
+
+An automated snapshot of the {TOP_N} most-starred repositories created during the last {DAYS} days, generated with Python and GitHub Actions.
+
+**[English](#overview) · [本周榜单](#本周榜单) · [历史榜单](#历史榜单)**
+
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Weekly-2088FF?logo=githubactions&logoColor=white)](https://github.com/Cjj040721/GitHub-Trending-Weekly/actions)
+[![Python](https://img.shields.io/badge/Python-Standard_Library-3776AB?logo=python&logoColor=white)](scripts/fetch_trending.py)
+[![Ranking](https://img.shields.io/badge/Top-{TOP_N}_New_Repositories-2AA887)](#本周榜单)
+
+</div>
+
+---
+
+<a id="overview"></a>
+## 1. Overview
+
+GitHub's Search API does not provide a weekly star-increment metric. This project uses a transparent approximation: **repositories created in the last {DAYS} days, ranked by their current star count**. Every run rewrites this homepage and preserves a dated archive.
+
+**Last updated:** {now}, automatically generated.
+
+<a id="本周榜单"></a>
+## 2. 本周榜单({week_id()})
 
 {table}
 
-## 📚 历史榜单
+<a id="历史榜单"></a>
+## 3. 历史榜单
 
 {history}
 
-## 它是怎么工作的
+## 4. 它是怎么工作的
 
 - `scripts/fetch_trending.py`:调用 GitHub Search API,取「最近 {DAYS} 天新建、按 star 排序」的前 {TOP_N} 个仓库,重写本 README 并存档到 `archives/`。
 - `.github/workflows/update.yml`:GitHub Actions 每周一上午(北京时间)自动运行脚本,有变化就自动 commit。
